@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio – Kontakt</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    form .row{display:grid; gap:.8rem; grid-template-columns:1fr 1fr}
+    form input, form textarea{
+      width:100%; padding:.8rem; border-radius:12px; border:1px solid rgba(255,255,255,.14);
+      background:rgba(255,255,255,.04); color:var(--text)
+    }
+    form textarea{min-height:140px; resize:vertical}
+    form .row > *{min-width:0}
+    form .note{font-size:.9rem; color:var(--muted)}
+    @media (max-width:700px){form .row{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Glavna navigacija">
+      <a class="brand" href="index.html">Lana Marija</a>
+      <ul>
+        <li><a class="link" href="index.html">Početna</a></li>
+        <li><a class="link" href="about.html">O meni</a></li>
+        <li><a class="link" href="projects.html">Projekti</a></li>
+        <li><a class="link" href="contact.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1>Kontakt</h1>
+      <p class="muted">Slobodno me kontaktiraj putem obrasca.</p>
+      <form class="card" action="https://formspree.io/f/xyyyo" method="POST" aria-label="Kontakt obrazac">
+        <div class="row">
+          <label>
+            Ime
+            <input name="ime" placeholder="Vaše ime" required>
+          </label>
+          <label>
+            Email
+            <input name="email" type="email" placeholder="ime@domena.com" required>
+          </label>
+        </div>
+        <label>
+          Poruka
+          <textarea name="message" placeholder="Kako mogu pomoći?" required></textarea>
+        </label>
+        <p class="note">Ova kontakt forma je demonstracijska i služi kao dio dizajna stranice.</p>
+        <button class="button" type="submit">Pošalji</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Lana Marija</div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

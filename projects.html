@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio – Projekti</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Glavna navigacija">
+      <a class="brand" href="index.html">Lana Marija</a>
+      <ul>
+        <li><a class="link" href="index.html">Početna</a></li>
+        <li><a class="link" href="about.html">O meni</a></li>
+        <li><a class="link" href="projects.html">Projekti</a></li>
+        <li><a class="link" href="contact.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1>Projekti</h1>
+      <p class="muted">Ovdje su prikazani moji dosadašnji projekti.</p>
+      <div class="grid grid-3">
+        <article class="card">
+          <img src="images/studio b.jpeg" alt="studiob">
+          <h3>Projekt 1 - Redizajn web stranice</h3>
+          <p class="muted">Redizajn postojeće web stranice frizerskog salona <strong>Studio B</strong> napravljen kao završni rad 
+u Školi za grafiku, dizajn i medijsku produkciju. Cilj projekta bio je modernizirati izgled i poboljšati 
+korisničko iskustvo kroz čišći dizajn, bolju tipografiju i responzivni prikaz na svim uređajima.</p>
+          <a class="button" href="https://studiob.com.hr" target="_blank" rel="noopener">Pogledaj</a>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop" alt="Projekt 2 – tipkovnica i kod">
+          <h3>Projekt 2 - Osobni Portfolio</h3>
+          <p class="muted">Osobna portfolio stranica osmišljena za mladog fotografa koji živi u gradu. 
+Fokus je bio na jednostavnom i elegantnom prikazu galerije fotografija.</p>
+          <a class="button" href="#" target="_blank" rel="noopener">Pogledaj</a>
+        </article>
+        <article class="card">
+          <img src="images/kabinet.jpeg" alt="kabinet">
+          <h3>Projekt 3 - Café Kabinet</h3>
+          <p class="muted">Dizajn konceptualne web stranice za mali kafić s modernim vizualnim identitetom. 
+Stranica uključuje pregled menija, kontakt formu i lokaciju. </p>
+          <a class="button" href="https://example.com" target="_blank" rel="noopener">Pogledaj</a>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Lana Marija</div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

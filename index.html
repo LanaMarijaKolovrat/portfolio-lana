@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio – Početna</title>
+  <meta name="description" content="Osobna portfolio stranica – kratka biografija, vještine i istaknuti projekti.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Glavna navigacija">
+      <a class="brand" href="index.html">Lana Marija</a>
+      <ul>
+        <li><a class="link" href="index.html">Početna</a></li>
+        <li><a class="link" href="about.html">O meni</a></li>
+        <li><a class="link" href="projects.html">Projekti</a></li>
+        <li><a class="link" href="contact.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <span class="badge">Portfolio student / junior</span>
+          <h1 class="fade-in">Bok, ja sam <span style="color:var(--accent)">Lana Marija Kolovrat</span>.<br>Izrađujem lijepe i brze web stranice.</h1>
+          <p class="lead">Ova demo-stranica je izrađena za kolegij <strong>razvoj interakcijskih sučelja</strong> – pokazuje osnovne HTML elemente, moderne CSS stilove (flex i grid), animacije i responzivni dizajn.</p>
+          <div class="cta">
+            <a class="button" href="projects.html">Pogledaj projekte</a>
+            <a class="button secondary" href="about.html">Saznaj više</a>
+          </div>
+          <p class="muted" style="margin-top:.8rem">Tipka <span class="kbd">G</span> vodi na GitHub (primjer apsolutne putanje).</p>
+        </div>
+        <div class="floaty">
+          <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1400&auto=format&fit=crop" alt="Ilustracija laptopa i koda">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Istaknute vještine</h2>
+        <div class="grid grid-3">
+          <article class="card"><h3>HTML osnove</h3><p class="muted">Razumijem strukturu web stranice i pravilno koristim osnovne HTML elemente poput naslova, slika i linkova.</p></article>
+          <article class="card"><h3>CSS stilovi</h3><p class="muted">Primjenjujem boje, margine, tipografiju i raspored elemenata kako bi stranica izgledala uredno i moderno</p></article>
+          <article class="card"><h3>Animacije i prijelazi</h3><p class="muted">Koristim jednostavne hover efekte i tranzicije da stranica bolje izgleda.</p></article>
+          <article class="card"><h3>Responzivni dizajn</h3><p class="muted"> izgled stranice različitim uređajima pomoću media queryja i fleksibilnog rasporeda.</p></article>
+          <article class="card"><h3>Alati koje koristim</h3><p class="muted">Radim u alatima poput Visual Studio Codea, Figme i Photoshopa za izradu i uređivanje dizajna.</p></article>
+          <article class="card"><h3>Kreativnost i dizajn</h3><p class="muted">Volim kombinirati boje, fontove i slike kako bi stranice bile privlačne i lako čitljive.</aricle>
+</div>
+</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © <span id="year"></span> Lana Marija• Dizajniran i hostan na <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a>.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // primjer apsolutne putanje
+    document.addEventListener('keydown', e => { if(e.key.toLowerCase()==='g'){ window.location.href='https://github.com/'; }});
+  </script>
+</body>
+</html>
