@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio – O meni</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Glavna navigacija">
+      <a class="brand" href="index.html">Lana Marija</a>
+      <ul>
+        <li><a class="link" href="index.html">Početna</a></li>
+        <li><a class="link" href="about.html">O meni</a></li>
+        <li><a class="link" href="projects.html">Projekti</a></li>
+        <li><a class="link" href="contact.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="section">
+    <div class="container grid grid-2">
+      <div>
+        <h1>O meni</h1>
+        <p class="muted">Završila sam Školu za grafiku, dizajn i medijsku produkciju u Zagrebu, smjer web dizajn. Trenutno studiram digitalni marketing na Sveučilištu Algebra. Uz akademski razvoj, aktivno se bavim skijanjem i radim kao trener, što me oblikovalo u discipliniranu i motiviranu osobu koja voli raditi s ljudima. </p>
+        <ul>
+          <li><strong>Lokacija:</strong> Zagreb, Hrvatska</li>
+          <li><strong>Obrazovanje:</strong> web dizajn (srednja škola), studentica digitalnog marketinga (2. godina)</li>
+          <li><strong>Fokus:</strong> UX/UI dizajn, digitalni marketing, brendiranje</li>
+          <li><strong>Interesi:</strong> skijanje, tehnologija</li>
+          <li><strong>Cilj:</strong> razvijati karijeru u području digitalnog brendiranja</li>
+        </ul>
+        <h2>Tablica – dostupnost</h2>
+        <table class="card" role="table" aria-label="Tjedna dostupnost">
+          <thead><tr><th>Dan</th><th>Prijepodne</th><th>Poslijepodne</th></tr></thead>
+          <tbody>
+            <tr><td>Pon</td><td>–</td><td>✓</td></tr>
+            <tr><td>Uto</td><td>✓</td><td>✓</td></tr>
+            <tr><td>Sri</td><td>–</td><td>✓</td></tr>
+            <tr><td>Čet</td><td>✓</td><td>–</td></tr>
+            <tr><td>Pet</td><td>✓</td><td>✓</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <aside>
+        <img src="images/ski2.jpg" alt="ski">
+    </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Lana Marija</div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
