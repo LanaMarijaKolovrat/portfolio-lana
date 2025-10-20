@@ -111,6 +111,8 @@ background: none;
 border: none;
 color: white;
 cursor: pointer;
+position: relative;
+top: -4px;
 }
 
 /* Mobilni prikaz */
