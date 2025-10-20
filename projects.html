@@ -17,6 +17,8 @@
         <li><a class="link" href="contact.html">Kontakt</a></li>
       </ul>
     </nav>
+        <!-- Hamburger gumb – vidi se samo na mobitelu -->
+      <button class="menu-toggle" aria-label="Otvori izbornik">☰</button>
   </header>
 
   <main class="section">
@@ -54,5 +56,16 @@ Stranica uključuje pregled menija, kontakt formu i lokaciju. </p>
     <div class="container">© <span id="year"></span> Lana Marija</div>
   </footer>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+    <script>
+const menuToggle = document.querySelector('.menu-toggle');
+const navMenu = document.querySelector('.nav ul');
+
+if (menuToggle && navMenu) {
+menuToggle.addEventListener('click', () => {
+navMenu.classList.toggle('active');
+});
+}
+</script>
 </body>
 </html>

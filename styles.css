@@ -100,3 +100,41 @@ footer{
   .grid-2{grid-template-columns:1fr}
   .grid-3{grid-template-columns:1fr}
 }
+
+/* ===== Hamburger meni ===== */
+
+/* Osnovno stanje (desktop) */
+.menu-toggle {
+display: none;
+font-size: 2rem;
+background: none;
+border: none;
+color: white;
+cursor: pointer;
+}
+
+/* Mobilni prikaz */
+@media (max-width: 768px) {
+.nav ul {
+display: none;
+flex-direction: column;
+background-color: rgba(20, 20, 30, 0.95);
+position: absolute;
+top: 70px;
+right: 15px;
+padding: 1rem 2rem;
+border-radius: 10px;
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.nav ul.active {
+display: flex;
+}
+
+.menu-toggle {
+display: block;
+position: absolute;
+top: 20px;
+right: 20px;
+}
+}

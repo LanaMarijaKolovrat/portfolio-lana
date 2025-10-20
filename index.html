@@ -18,6 +18,8 @@
         <li><a class="link" href="contact.html">Kontakt</a></li>
       </ul>
     </nav>
+    <!-- Hamburger gumb – vidi se samo na mobitelu -->
+      <button class="menu-toggle" aria-label="Otvori izbornik">☰</button>
   </header>
   
 
@@ -68,5 +70,17 @@
     // primjer apsolutne putanje
     document.addEventListener('keydown', e => { if(e.key.toLowerCase()==='g'){ window.location.href='https://github.com/'; }});
   </script>
+
+  <script>
+const menuToggle = document.querySelector('.menu-toggle');
+const navMenu = document.querySelector('.nav ul');
+
+if (menuToggle && navMenu) {
+menuToggle.addEventListener('click', () => {
+navMenu.classList.toggle('active');
+});
+}
+</script>
+
 </body>
 </html>
